@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazy-load';
 import Slick from 'react-slick';
 import Demo from '../components/Demo';
 import InnerImageZoom from 'react-inner-image-zoom';
@@ -50,7 +50,7 @@ const Demos = () => {
       </section>
 
       <section id="lazyload">
-        <Demo name="With React Lazyload" notes={['Integration with <a href="https://github.com/twobin/react-lazyload" target="_blank">React Laxyload</a>', 'Photo credit: <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Jay Wennington</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>']} code={`<LazyLoad>\n\xa0\xa0<InnerImageZoom\n\xa0\xa0\xa0\xa0src="/path/to/image.jpg"\n\xa0\xa0\xa0\xa0zoomSrc="/path/to/zoom-image.jpg"\n\xa0\xa0/>\n</LazyLoad>`}>
+        <Demo name="With React Lazy Load" notes={['Integration with <a href="https://github.com/loktar00/react-lazy-load" target="_blank">React Lazy Load</a>', 'Photo credit: <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Jay Wennington</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>']} code={`<LazyLoad>\n\xa0\xa0<InnerImageZoom\n\xa0\xa0\xa0\xa0src="/path/to/image.jpg"\n\xa0\xa0\xa0\xa0zoomSrc="/path/to/zoom-image.jpg"\n\xa0\xa0/>\n</LazyLoad>`}>
           <LazyLoad>
             <InnerImageZoom src="images/unsplash-8.jpg" zoomSrc="images/unsplash-8-large.jpg" />
           </LazyLoad>
