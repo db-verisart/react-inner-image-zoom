@@ -19,7 +19,7 @@ const Demos = () => {
         <HashLink to="/demos#basic">Basic</HashLink>
         <HashLink to="/demos#fullscreen">Fullscreen On Mobile</HashLink>
         <HashLink to="/demos#responsive">Responsive Images</HashLink>
-        <HashLink to="/demos#lazyload">With React Lazyload</HashLink>
+        <HashLink to="/demos#lazyload">With React Lazy Load</HashLink>
         <HashLink to="/demos#slick">With Slick Carousel</HashLink>
       </nav>
 
