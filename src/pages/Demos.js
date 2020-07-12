@@ -7,7 +7,7 @@ import InnerImageZoom from 'react-inner-image-zoom';
 import './demos.css';
 import './slick.css';
 import './slick-theme.css';
-import './iiz.css';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 const Demos = () => {
   return(
@@ -17,6 +17,7 @@ const Demos = () => {
       <nav className="demos__nav">
         <span>jump to:</span>
         <HashLink to="/demos#basic">Basic</HashLink>
+        <HashLink to="/demos#dragToMove">Drag To Move</HashLink>
         <HashLink to="/demos#fullscreen">Fullscreen On Mobile</HashLink>
         <HashLink to="/demos#responsive">Responsive Images</HashLink>
         <HashLink to="/demos#lazyload">With React Lazy Load</HashLink>
@@ -26,6 +27,12 @@ const Demos = () => {
       <section id="basic">
         <Demo name="Basic" notes={['Simplest use case with only src prop set', 'Photo credit: <a href="https://unsplash.com/photos/Kx8DDqb6Wbw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Toa Heftiba</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>']} code={`<InnerImageZoom src="/path/to/image.jpg" />`}>
           <InnerImageZoom src="images/unsplash-2.jpg" />
+        </Demo>
+      </section>
+
+      <section id="dragToMove">
+        <Demo name="Drag To Move" notes={['Drag to explore zoomed image on non-touch devices', 'Click to zoom out', 'Photo credit: <a href="https://unsplash.com/@curology?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Curology</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>']} code={`<InnerImageZoom src="/path/to/image.jpg" zoomSrc="/path/to/zoom-image.jpg" moveType="drag" />`}>
+          <InnerImageZoom src="images/unsplash-9.jpg" zoomSrc="images/unsplash-9-large.jpg" moveType="drag" />
         </Demo>
       </section>
 

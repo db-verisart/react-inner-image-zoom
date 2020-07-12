@@ -9,6 +9,7 @@ const Docs = () => {
 
       <nav className="docs__nav">
         <HashLink to="#installation">Installation</HashLink>
+        <HashLink to="#styling">Styling</HashLink>
         <HashLink to="#usage">Usage</HashLink>
         <HashLink to="#props">Props</HashLink>
       </nav>
@@ -20,6 +21,20 @@ const Docs = () => {
           <pre className="docs__code"><code>npm install react-inner-image-zoom</code></pre>
           <h4>Yarn</h4>
           <pre className="docs__code"><code>yarn add react-inner-image-zoom</code></pre>
+        </div>
+
+        <div>
+          <h3 id="styling">Styling</h3>
+          <h4>Download</h4>
+          <p>Grab the raw CSS from Github to use however you see fit:</p>
+          <p><a href="https://raw.githubusercontent.com/laurenashpole/react-inner-image-zoom/master/src/InnerImageZoom/styles.css" target="_blank" rel="noopener noreferrer">styles.css</a></p>
+          <p>or the minified version:</p>
+          <p><a href="https://raw.githubusercontent.com/laurenashpole/react-inner-image-zoom/master/src/InnerImageZoom/styles.min.css" target="_blank" rel="noopener noreferrer">styles.min.css</a></p>
+          <h4>Import</h4>
+          <p>If your setup supports it, import the CSS directly from your node_modules:</p>
+          <pre className="docs__code"><code>import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';</code></pre>
+          <p>or the minified version:</p>
+          <pre className="docs__code"><code>import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';</code></pre>
         </div>
 
         <div>
@@ -39,7 +54,8 @@ const Docs = () => {
           <p><b>sources (Array)</b>A list of image sources for using the picture tag to serve the appropriate original image (see below for more details).</p>
           <p><b>zoomSrc (String)</b>URL for the larger zoom image. Falls back to original image src if not defined.</p>
           <p><b>alt (String)</b>Alternative text for the original image.</p>
-          <p><b>fadeDuration (Number)</b>Default 150. Fade transition time in milliseconds.</p>
+          <p><b>moveType (String)</b>Default pan. Accepts pan or drag options. The user behavior for moving zoomed images on non-touch devices.</p>
+          <p><b>fadeDuration (Number)</b>Default 150. Fade transition time in milliseconds. If zooming in on transparent images, set this to 0 for best results.</p>
           <p><b>fullscreenOnMobile (Boolean)</b>Default false. Enables fullscreen zoomed image on touch devices below a specified breakpoint.</p>
           <p><b>mobileBreakpoint (Number)</b>Default 640. The maximum breakpoint for fullscreen zoom image when fullscreenOnMobile is true.</p>
           <p><b>className (String)</b>Custom classname for styling the component.</p>

@@ -45,6 +45,8 @@ class Demo extends Component {
               <button
                 className="demo__code-btn"
                 onClick={this.handleClick}
+                aria-expanded={this.state.showCode}
+                aria-controls={`${this.props.name.replace(' ', '')}Code`}
               >
                 {this.state.showCode ? 'Hide Code -' : 'Show Code +'}
               </button>
@@ -53,7 +55,7 @@ class Demo extends Component {
         </div>
 
         {this.state.showCode &&
-          <pre className="demo__code">
+          <pre className="demo__code" id={`${this.props.name.replace(' ', '')}Code`}>
             <code>{code}</code>
           </pre>
         }

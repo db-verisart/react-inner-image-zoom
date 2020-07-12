@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Product from '../components/Product';
 import QuickStart from '../components/QuickStart';
-import './iiz.css';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 const Index = () => {
   return(

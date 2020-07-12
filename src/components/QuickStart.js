@@ -15,7 +15,7 @@ const QuickStart = () => {
         </div>
         <div className="quick-start__step">
           <span>Style:</span>
-          <code>Grab styles.css from <a href="https://raw.githubusercontent.com/laurenashpole/react-inner-image-zoom/master/src/InnerImageZoom/styles.css" target="_blank" rel="noopener noreferrer">Github</a></code>
+          <code>Grab styles.css from <a href="https://raw.githubusercontent.com/laurenashpole/react-inner-image-zoom/master/src/InnerImageZoom/styles.css" target="_blank" rel="noopener noreferrer">Github</a> or import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'</code>
         </div>
         <div className="quick-start__step">
           <span>Import:</span>
