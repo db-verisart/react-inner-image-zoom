@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './demo.css';
 
 class Demo extends Component {
@@ -7,7 +8,8 @@ class Demo extends Component {
     super(props);
 
     this.state = {
-      showCode: false
+      showCode: false,
+      isCopied: false
     };
   }
 
@@ -15,6 +17,18 @@ class Demo extends Component {
     this.setState((prevState) => ({
       showCode: !prevState.showCode
     }));
+  }
+
+  handleCopy = () => {
+    this.setState({
+      isCopied: true
+    }, () => {
+      setTimeout(() => {
+        this.setState({
+          isCopied: false
+        })
+      }, 2000);
+    });
   }
 
   render () {
@@ -56,6 +70,10 @@ class Demo extends Component {
 
         {this.state.showCode &&
           <pre className="demo__code" id={`${this.props.name.replace(' ', '')}Code`}>
+            <CopyToClipboard text={code} onCopy={this.handleCopy}>
+              <button className="demo__code-copy demo__code-btn">{`Cop${this.state.isCopied ? 'ied!' : 'y'}`}</button>
+            </CopyToClipboard>
+
             <code>{code}</code>
           </pre>
         }
