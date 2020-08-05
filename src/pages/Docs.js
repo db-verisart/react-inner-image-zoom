@@ -48,26 +48,32 @@ const Docs = () => {
 
         <div>
           <h3 id="props">Props</h3>
-          <p><b>src (String)</b>Required. URL for the original image.</p>
-          <p><b>srcSet (String)</b>Default srcset attribute for a responsive original image.</p>
-          <p><b>sizes (String)</b>Default sizes attribute for use with srcset.</p>
-          <p><b>sources (Array)</b>A list of image sources for using the picture tag to serve the appropriate original image (see below for more details).</p>
-          <p><b>zoomSrc (String)</b>URL for the larger zoom image. Falls back to original image src if not defined.</p>
-          <p><b>alt (String)</b>Alternative text for the original image.</p>
-          <p><b>moveType (String)</b>Default pan. Accepts pan or drag options. The user behavior for moving zoomed images on non-touch devices.</p>
-          <p><b>fadeDuration (Number)</b>Default 150. Fade transition time in milliseconds. If zooming in on transparent images, set this to 0 for best results.</p>
-          <p><b>fullscreenOnMobile (Boolean)</b>Default false. Enables fullscreen zoomed image on touch devices below a specified breakpoint.</p>
-          <p><b>mobileBreakpoint (Number)</b>Default 640. The maximum breakpoint for fullscreen zoom image when fullscreenOnMobile is true.</p>
-          <p><b>className (String)</b>Custom classname for styling the component.</p>
-          <p><b>afterZoomIn (Function)</b>Function to be called after zoom in.</p>
-          <p><b>afterZoomOut (Function)</b>Function to be called after zoom out.</p>
+
+          <ul className="docs__props-list">
+            <li><b>src (String): </b>Required. URL for the original image.</li>
+            <li><b>srcSet (String): </b>Default srcset attribute for a responsive original image.</li>
+            <li><b>sizes (String): </b>Default sizes attribute for use with srcset.</li>
+            <li><b>sources (Array): </b>A list of image sources for using the picture tag to serve the appropriate original image (see below for more details).</li>
+            <li><b>zoomSrc (String): </b>URL for the larger zoom image. Falls back to original image src if not defined.</li>
+            <li><b>alt (String): </b>Alternative text for the original image.</li>
+            <li><b>moveType (String): </b>Default pan. Accepts pan or drag options. The user behavior for moving zoomed images on non-touch devices.</li>
+            <li><b>fadeDuration (Number): </b>Default 150. Fade transition time in milliseconds. If zooming in on transparent images, set this to 0 for best results.</li>
+            <li><b>fullscreenOnMobile (Boolean): </b>Default false. Enables fullscreen zoomed image on touch devices below a specified breakpoint.</li>
+            <li><b>mobileBreakpoint (Number): </b>Default 640. The maximum breakpoint for fullscreen zoom image when fullscreenOnMobile is true.</li>
+            <li><b>className (String): </b>Custom classname for styling the component.</li>
+            <li><b>afterZoomIn (Function): </b>Function to be called after zoom in.</li>
+            <li><b>afterZoomOut (Function): </b>Function to be called after zoom out.</li>
+          </ul>
 
           <h4>Sources</h4>
           <p>This prop accepts an array of objects which it uses to create a picture tag and source elements. The component looks for the following optional properties and you can find additional details <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">here</a>: </p>
-          <p><b>srcSet (String)</b>Srcset attribute for source tag.</p>
-          <p><b>sizes (String)</b>Sizes attribute for source tag.</p>
-          <p><b>media (String)</b>An attribute containing a media condition for use with the srcset.</p>
-          <p><b>type (String)</b>An image MIME type. This is useful for using newer formats like WebP.</p>
+
+          <ul className="docs__props-list">
+            <li><b>srcSet (String): </b>Srcset attribute for source tag.</li>
+            <li><b>sizes (String): </b>Sizes attribute for source tag.</li>
+            <li><b>media (String): </b>An attribute containing a media condition for use with the srcset.</li>
+            <li><b>type (String): </b>An image MIME type. This is useful for using newer formats like WebP.</li>
+          </ul>
         </div>
       </section>
     </div>

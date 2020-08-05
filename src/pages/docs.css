@@ -29,7 +29,7 @@
 
 .docs__content h4 {
   margin: 1.5rem 0 0.665rem 0;
-  color: #9697ae;
+  color: #727292;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -39,7 +39,6 @@
 .docs__content b {
   margin-bottom: 2px;
   font-weight: 600;
-  display: block;
 }
 
 .docs__content div + div {
@@ -60,6 +59,23 @@
   padding: 1.5rem;
   border-radius: 1px;
   overflow: auto;
+}
+
+.docs__props-list {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #d5d5df;
+  border-radius: 1px;
+  list-style: none;
+}
+
+.docs__props-list li {
+  padding: 0.65rem;
+  line-height: 1.4em;
+}
+
+.docs__props-list li + li {
+  border-top: 1px solid #d5d5df;
 }
 
 @media (min-width: 768px) {

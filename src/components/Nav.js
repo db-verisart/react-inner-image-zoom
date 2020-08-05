@@ -12,11 +12,16 @@ const Nav = () => {
         <li className="nav__item">
           <a className="nav__link" href="https://www.npmjs.com/package/react-inner-image-zoom">NPM</a>
         </li>
+        <li className="nav__item">
+          <a className="nav__link" href="https://laurenashpole.github.io/vue-inner-image-zoom">Using Vue?</a>
+        </li>
       </ul>
 
       <ul className="nav__list nav__list--primary">
         <li className="nav__item nav__item--left">
-          <NavLink to="/" exact className="nav__link" activeClassName="nav__link--active">Inner Image Zoom</NavLink>
+          <NavLink to="/" exact className="nav__link" activeClassName="nav__link--active">
+            <h1>React Inner Image Zoom</h1>
+          </NavLink>
         </li>
         <li className="nav__item">
           <NavLink to="/demos" className="nav__link" activeClassName="nav__link--active">Demos</NavLink>

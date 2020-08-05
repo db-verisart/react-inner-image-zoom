@@ -19,7 +19,7 @@
 }
 
 .quick-start__content span {
-  color: #9697ae;
+  color: #727292;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -29,8 +29,9 @@
 
 .quick-start__step {
   background: #fff;
-  padding: 1.1rem 1rem 1rem calc(2rem + 30px);
+  padding: 1.1rem 1rem 1rem calc(2rem + 10px);
   position: relative;
+  word-break: break-word;
 }
 
 .quick-start__step + .quick-start__step {
@@ -40,7 +41,7 @@
 .quick-start__step:before {
   counter-increment: step;
   content: counter(step);
-  background: #9697ae;
+  background: #727292;
   width: 45px;
   height: 45px;
   margin-top: -22.5px;
@@ -71,6 +72,10 @@
 
   .quick-start__heading span {
     display: block;
+  }
+
+  .quick-start__step {
+    padding-left: calc(2rem + 30px);
   }
 }
 

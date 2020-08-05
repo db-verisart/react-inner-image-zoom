@@ -60,7 +60,7 @@ class Demo extends Component {
                 className="demo__code-btn"
                 onClick={this.handleClick}
                 aria-expanded={this.state.showCode}
-                aria-controls={`${this.props.name.replace(' ', '')}Code`}
+                aria-controls={`${this.props.name.replace(/ /g, '')}Code`}
               >
                 {this.state.showCode ? 'Hide Code -' : 'Show Code +'}
               </button>
@@ -69,7 +69,7 @@ class Demo extends Component {
         </div>
 
         {this.state.showCode &&
-          <pre className="demo__code" id={`${this.props.name.replace(' ', '')}Code`}>
+          <pre className="demo__code" id={`${this.props.name.replace(/ /g, '')}Code`}>
             <CopyToClipboard text={code} onCopy={this.handleCopy}>
               <button className="demo__code-copy demo__code-btn">{`Cop${this.state.isCopied ? 'ied!' : 'y'}`}</button>
             </CopyToClipboard>

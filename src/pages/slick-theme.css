@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
   .slick-prev,
   .slick-next {
-    background: #9697ae;
+    background: #727292;
     width: 52px;
     height: 52px;
     padding: 0 0 0 5px;
@@ -141,7 +141,7 @@
 
 .slick-dots li button:before {
   content: " ";
-  background: #9697ae;
+  background: #727292;
   width: 8px;
   height: 8px;
   border-radius: 50%;
