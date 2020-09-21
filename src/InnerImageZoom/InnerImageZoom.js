@@ -12,7 +12,7 @@ class InnerImageZoom extends Component {
       isActive: false,
       isTouch: false,
       isZoomed: false,
-      isFullscreen: false,
+      isFullscreen: true,
       isDragging: false,
       currentMoveType: props.moveType,
       left: 0,
